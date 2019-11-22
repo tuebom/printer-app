@@ -30,7 +30,7 @@
     <preference name="show-splash-screen-spinner" value="false"/>
     <preference name="auto-hide-splash-screen" value="true"/>
     <preference name="disable-cursor" value="false"/>
-    <preference name="android-minSdkVersion" value="16"/>
+    <preference name="android-minSdkVersion" value="19"/>
     <preference name="android-targetSdkVersion" value="28"/>
     <preference name="android-installLocation" value="auto"/>
     <preference name="phonegap-version" value="cli-6.5.0" />
@@ -40,7 +40,7 @@
       <variable name="ANDROID_SUPPORT_VERSION" value="27.+" />
     </plugin> -->
 
-    <!-- <plugin name="cordova-plugin-printer" source="npm" /> -->
+    <plugin name="cordova-plugin-printer" source="npm" />
     <!-- <plugin spec="https://github.com/katzer/cordova-plugin-printer.git" />-->
     <!-- <plugin spec="https://github.com/phonegap/phonegap-plugin-barcodescanner#6.0.1" /> -->
 
