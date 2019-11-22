@@ -56,16 +56,16 @@
 
         $$('.button-pick').on('click', function (e) {
           
-          // app.dialog.alert('On pick!');
-          cordova.plugins.printer.pick(function (url) {});
-          app.dialog.alert(url);
+          app.dialog.alert('On pick!');
+          //cordova.plugins.printer.pick(function (url) {});
+          //app.dialog.alert(url);
         });
 
         
         $$('.button-print').on('click', function (e) {
           
-          // app.dialog.alert('On print!');
-          cordova.plugins.printer.print('<h1>Hello World!</h1>');
+          app.dialog.alert('On print!');
+          //cordova.plugins.printer.print('<h1>Hello World!</h1>');
         });
 
       }
