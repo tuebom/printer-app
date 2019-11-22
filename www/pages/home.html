@@ -1,0 +1,74 @@
+<template>
+  <div data-name="home" class="page">
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="title">Printer App</div>
+      </div>
+    </div>
+
+    <!-- <div class="toolbar">
+      <div class="toolbar-inner">
+        Bottom toolbar
+      </div>
+    </div> -->
+
+    <div class="page-content">
+      
+      <div class="block-title">Options</div>
+      <div class="block block-strong">
+        <div class="row">
+          <div class="col-50">
+            <a href="#" class="button button-raised button-pick">Pick</a>
+          </div>
+          <div class="col-50">
+            <a href="#" class="button button-raised button-print">Print</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</template>
+<script>
+  return {
+        
+    // Page Events
+    // methods: {
+    
+    //   removeItem: function() {
+    //     app.dialog.alert('Haloo');
+    //   }
+    // },
+
+    on: {
+      
+      pageBeforeIn: function (event, page) {
+
+      },
+      
+      pageInit: function(e, page) {
+        
+        // $$('input').on('focus', function () {
+        //     app.dialog.alert('On focus!');
+        // });
+
+
+        $$('.button-pick').on('click', function (e) {
+          
+          // app.dialog.alert('On pick!');
+          cordova.plugins.printer.pick(function (url) {});
+          app.dialog.alert(url);
+        });
+
+        
+        $$('.button-print').on('click', function (e) {
+          
+          // app.dialog.alert('On print!');
+          cordova.plugins.printer.print('<h1>Hello World!</h1>');
+        });
+
+      }
+    }
+  }
+</script>
